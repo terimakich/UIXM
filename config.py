@@ -108,3 +108,10 @@ if SUPPORT_CHANNEL and not URL_PATTERN.match(SUPPORT_CHANNEL):
 
 if SUPPORT_CHAT and not URL_PATTERN.match(SUPPORT_CHAT):
     raise SystemExit("[ERROR] - Your SUPPORT_CHAT URL is invalid. Must start with https://")
+
+# Optional backwards compatibility
+STRING1 = STRING_SESSIONS[0]
+STRING2 = STRING_SESSIONS[1]
+STRING3 = STRING_SESSIONS[2]
+STRING4 = STRING_SESSIONS[3]
+STRING5 = STRING_SESSIONS[4]
