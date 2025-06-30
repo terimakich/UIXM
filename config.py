@@ -1,15 +1,22 @@
 import re
 from os import getenv, environ
 
-# Load .env only if not already in environment (good for Heroku, VPS)
+from pyrogram import filters  # ✅ This is required
+
+# Load .env only if not in environment
 if not environ.get("API_ID"):
     from dotenv import load_dotenv
     load_dotenv()
 
-# ========= Required Core Telegram Configuration =========
-API_ID = int(getenv("API_ID"))
+API_ID_RAW = getenv("API_ID")
+if not API_ID_RAW or not API_ID_RAW.isdigit():
+    raise SystemExit("[ERROR] - API_ID is missing or invalid in your .env file!")
+
+API_ID = int(API_ID_RAW)
 API_HASH = getenv("API_HASH")
 BOT_TOKEN = getenv("BOT_TOKEN")
+
+# continue with rest...
 
 # ========= Optional MongoDB & API Integrations =========
 MONGO_DB_URI = getenv("MONGO_DB_URI", None)
