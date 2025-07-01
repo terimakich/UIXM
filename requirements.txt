@@ -11,7 +11,7 @@ httpx==0.27.2
 motor
 pillow
 psutil
-pytgcalls>=2.0.0,<2.1.0
+pytgcalls==2.1.0
 pykeyboard
 pyrofork
 python-dotenv
