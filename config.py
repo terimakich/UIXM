@@ -18,7 +18,7 @@ MONGO_DB_URI = getenv("MONGO_DB_URI", None)
 
 # Vars For API End Pont.
 YTPROXY_URL = getenv("YTPROXY_URL", 'https://tgapi.xbitcode.com') ## E.G https://yt.okflix.
-YT_API_KEY = getenv("YT_API_KEY", None )
+YT_API_KEY = getenv("YT_API_KEY", 'xbit_0000557970017716954481')
 
 #API_URL = getenv("API_URL", 'https://api.thequickearn.xyz') #youtube song url
 #API_KEY = getenv("API_KEY", '30DxNexGenBotsc0db7b') # 
@@ -27,10 +27,10 @@ DURATION_LIMIT = int(getenv("DURATION_LIMIT", 14400)) # 5 hours
 VIDEO_DURATION_LIMIT = int(getenv("VIDEO_DURATION_LIMIT", 14400)) # 5 hours
 
 # Chat id of a group for logging bot's activities
-LOGGER_ID = int(getenv("LOGGER_ID", -1002715747653))
+LOGGER_ID = int(getenv("LOGGER_ID", -1002046320443))
 
 # Get this value from @FallenxBot on Telegram by /id
-OWNER_ID = int(getenv("OWNER_ID", 6221699441))
+OWNER_ID = int(getenv("OWNER_ID", 7650291301))
 
 SUDO_USERS = list(map(int, getenv("SUDO_USERS", str(OWNER_ID)).split()))
 
@@ -42,15 +42,15 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/strad-dev131/TeamXmusic2.0",
+    "https://github.com/terimakich/UIXM",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 GIT_TOKEN = getenv(
     "GIT_TOKEN", None
 )  # Fill this variable if your upstream repository is private
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/TeamXUpdate")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/TeamsXchat")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/THE_INCRICIBLE")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/TEAMINCRICIBLE PO")
 
 # Set this to True if you want the assistant to automatically leave chats after an interval
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
