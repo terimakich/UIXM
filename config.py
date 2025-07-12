@@ -17,11 +17,11 @@ BOT_TOKEN = getenv("BOT_TOKEN")
 MONGO_DB_URI = getenv("MONGO_DB_URI", None)
 
 # Vars For API End Pont.
-YTPROXY_URL = getenv("YTPROXY_URL", 'https://tgapi.xbitcode.com') ## E.G https://yt.okflix.
-YT_API_KEY = getenv("YT_API_KEY", 'xbit_0000557970017716954481')
+API_URL = getenv("API_URL", 'https://api.thequickearn.xyz') #youtube song url
+API_KEY = getenv("API_KEY", 'NxGBNexGenBots41dd4c') # youtube song api ke
 
 #API_URL = getenv("API_URL", 'https://api.thequickearn.xyz') #youtube song url
-#API_KEY = getenv("API_KEY", '30DxNexGenBotsc0db7b') # 
+#API_KEY = getenv("API_KEY", 'NxGBNexGenBots41dd4c') # 
 
 DURATION_LIMIT = int(getenv("DURATION_LIMIT", 14400)) # 5 hours
 VIDEO_DURATION_LIMIT = int(getenv("VIDEO_DURATION_LIMIT", 14400)) # 5 hours
